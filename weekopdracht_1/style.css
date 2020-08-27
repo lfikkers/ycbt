@@ -1,0 +1,26 @@
+* {
+    box-sizing:border-box;
+}
+
+table {
+    overflow: hidden;
+    display:inline-block;
+}
+
+td {
+    border: 1px solid black;
+    padding: 10px;
+    position: relative;
+}
+
+
+td:hover::after {
+    background-color: lightcoral;
+    content: '';
+    height: 10000px;
+    left: 0;
+    position: absolute;
+    top: -5000px;
+    width: 100%;
+    z-index: -1;
+}
