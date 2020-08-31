@@ -4,7 +4,9 @@
 
 table {
     overflow: hidden;
-    display:inline-block;
+    display: inline-block;
+    border: 1px solid black;
+    padding: 3px;
 }
 
 td {
@@ -13,6 +15,9 @@ td {
     position: relative;
 }
 
+td:hover {
+    background-color: yellow;
+}
 
 td:hover::after {
     background-color: lightcoral;
